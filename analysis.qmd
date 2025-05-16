@@ -5,3 +5,16 @@ editor: visual
 ---
 
 ## 
+
+```{r}
+library(HistData)
+library(dplyr)
+library(ggplot2)
+
+# Load and filter the dataset
+data("Breslau")
+breslau_filtered <- Breslau %>% 
+  filter(age >= 5)
+
+
+```
